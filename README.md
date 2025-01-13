@@ -32,14 +32,12 @@ If you want to submit a pull request, here are some requirements:
 
 * IDE: IntelliJ IDEA
 * Compiler: Java 1.8 or Java 11+
-* Do NOT modify `gradle` files
+* Do NOT modify `mvn` files
 
 ### Compilation
 
 Simply execute the following command in the project root directory:
 
 ```bash
-./gradlew clean build
+./mvnw clean package
 ```
-
-Make sure you have at least JavaFX 8 installed. Liberica Full JDK 8 or later is recommended.
