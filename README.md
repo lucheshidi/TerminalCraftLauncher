@@ -1,5 +1,10 @@
 # Terminal Craft Launcher
 
+![Static Badge](https://img.shields.io/badge/License-GPL%20v3-green)
+![GitHub top language](https://img.shields.io/github/languages/top/lucheshidi/TerminalCraftLauncher)
+![Static Badge](https://img.shields.io/badge/Follow%20on-GitHub-black?logo=github&link=https%3A%2F%2Fgithub.com%2Flucheshidi)
+
+
 **English** | [简体中文](README_zh-cn.md) | [繁体中文](README_zh-tw.md)
 
 ## Introduction
@@ -10,6 +15,7 @@ TCL has amazing cross-platform capabilities. Not only does it run on different o
 About the crossed-platform, click on [here](PLATFORM.md)
 
 ## Download
+If you are Windows, Please download the EXE file, if you are FreeBSD, Linux or like-unix system you can download the No-suffix executable file.
 Now you can go to [this page](https://github.com/lucheshidi/TerminalCraftLauncher/releases) to download the release(But it's empty yet\[Crying\]).
 
 Sometimes(I think) I will get a website and I can open the website download.
@@ -48,4 +54,4 @@ ls # show all the folder and file(Windows type "dir")
 Now in this folder you can see a file named `TerminalCraftLauncher-1.0-SNAPSHOT.jar`.
 I think you know how to do with the Jar file. or if you want to build Linux executable file or Windows EXE file, go [here](BUILD.md).
 
-##
+## 
