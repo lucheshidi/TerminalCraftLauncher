@@ -1,4 +1,4 @@
-package org.lucheshidi.tcl.json;
+package org.lucheshidi.plateau.json;
 
 import com.google.gson.Gson;
 

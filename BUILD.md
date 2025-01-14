@@ -20,6 +20,17 @@ Then open exe4j,
     > in `Archive`, you can write where is your built Jar file. If you haven't, go [here](README.md).
     > click on `next`. 
     > in the line of `Main class from[Class path], click on ...`.
-    > choose `org.springframework.boot.loader.launch.JarLauncher`. ***DON'T CHOOSE `BOOT-INF.classes.org.lucheshidi.tcl.Main`, BECAUSE IT CAN'T LAUNCH!!!***
+    > choose `org.springframework.boot.loader.launch.JarLauncher`. ***DON'T CHOOSE `BOOT-INF.classes.org.lucheshidi.plateau.Main`, 'CAUSE IT CAN'T LAUNCH!!!***.
+    > And click `next`.
+6. write your Java's version in `Minimum version`. If you don't know, you can open cmd and type:
+    > ```cmd
+    > java -version
+    > ```
+    > if it said `"java" is not a executable file, cmdlet` or something, that you haven't installed java.
+    > if the output have `openjdk version`, that you can write the number behind `version`.
+7. Then just click `next` and when you show `exe4j has finished`. Now you can go to where you write the output folder and try!
 
 ## Linux
+Linux is easier than Windows. because we already have the script.
+Ok, let's start.
+1. In where the 

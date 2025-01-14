@@ -1,4 +1,4 @@
-package org.lucheshidi.tcl.input;
+package org.lucheshidi.plateau.input;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -29,7 +29,7 @@
                 </executions>
                 <configuration>
                     <includeSystemScope>true</includeSystemScope>
-                    <mainClass>org.lucheshidi.tcl.Main</mainClass>
+                    <mainClass>org.lucheshidi.plateau.Main</mainClass>
                 </configuration>
             </plugin>
             <plugin>
