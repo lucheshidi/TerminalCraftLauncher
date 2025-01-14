@@ -5,7 +5,7 @@
 [![Static Badge](https://img.shields.io/badge/Follow%20On-GitHub-black?logo=github&link=https%3A%2F%2Fgithub.com%2Flucheshidi%2FTerminalCraftLauncher.git)](https://github.com/lucheshidi)
 
 
-**English** | [简体中文](README_zh-cn.md) | [繁体中文](README_zh-tw.md)
+**English** | [简体中文](README_zh-cn.md) | [繁體中文](README_zh-tw.md)
 
 ## Introduction
 Terminal Craft Launcher(TCL) is an open-source, cross-platform Minecraft launcher that will support Mod Management, Game Customizing, ModLoader Installing (Forge, NeoForge, Fabric, Quilt, LiteLoader, and OptiFine), Modpack Creating, UI Customization, and more.

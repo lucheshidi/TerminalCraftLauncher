@@ -4,7 +4,7 @@
 [![](https://img.shields.io/github/languages/top/lucheshidi/TerminalCraftLauncher?link=https%3A%2F%2Fgithub.com%2Flucheshidi%2FTerminalCraftLauncher)]()
 [![](https://img.shields.io/badge/Follow-GitHub-black?logo=github&link=https%3A%2F%2Fgithub.com%2Flucheshidi%2FTerminalCraftLauncher.git)](https://github.com/lucheshidi)
 
-[English](README.md) | ***简体中文*** | [繁体中文](README_zh-tw.md)
+[English](README.md) | ***简体中文*** | [繁體中文](README_zh-tw.md)
 
 ## 简介
 终端工艺启动器(Terminal Craft Launcher, TCL) 是一个开源的、跨平台的 Minecraft 启动器，即将支持模组管理、游戏自定义、ModLoader（例如 Forge、NeoForge、Fabric、Quilt、LiteLoader 和 OptiFine）的安装、模组包创建、界面自定义等功能
