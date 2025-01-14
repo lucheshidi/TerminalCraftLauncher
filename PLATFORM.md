@@ -9,8 +9,9 @@
  | `i386`                 |                            |
  | `i586`                 |                            |
  | `LoongArch`            |                            |
- |                        |                            |
- ------------------------------------------------------
+ | `arm64`                |                            |
+ | `arm32`                |                            |
+ -------------------------------------------------------
 
 ### Ok, Now I think you already know are you Architecture supported.
 ### Click [here](README.md) to go back to the README.
