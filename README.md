@@ -1,8 +1,8 @@
 # Terminal Craft Launcher
 
 ![Static Badge](https://img.shields.io/badge/License-GPL%20v3-green)
-![GitHub top language](https://img.shields.io/github/languages/top/lucheshidi/TerminalCraftLauncher)
-![Static Badge](https://img.shields.io/badge/Follow%20on-GitHub-black?logo=github&link=https%3A%2F%2Fgithub.com%2Flucheshidi)
+![GitHub top language](https://img.shields.io/github/languages/top/lucheshidi/TerminalCraftLauncher?link=https%3A%2F%2Fgithub.com%2Flucheshidi%2FTerminalCraftLauncher)
+![Static Badge](https://img.shields.io/badge/Follow%20On-GitHub-black?logo=github&link=https%3A%2F%2Fgithub.com%2Flucheshidi%2FTerminalCraftLauncher.git)
 
 
 **English** | [简体中文](README_zh-cn.md) | [繁体中文](README_zh-tw.md)
