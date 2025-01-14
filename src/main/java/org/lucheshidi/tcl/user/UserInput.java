@@ -1,10 +1,10 @@
-package org.lucheshidi.plateau.user;
+package org.lucheshidi.tcl.user;
 
 import org.jline.reader.LineReader;
 import org.jline.reader.LineReaderBuilder;
-import org.lucheshidi.plateau.input.Commands;
+import org.lucheshidi.tcl.input.Commands;
 
-import org.lucheshidi.plateau.util.SystemPlatform;
+import org.lucheshidi.tcl.util.SystemPlatform;
 
 public class UserInput {
     public static void waitInput() {

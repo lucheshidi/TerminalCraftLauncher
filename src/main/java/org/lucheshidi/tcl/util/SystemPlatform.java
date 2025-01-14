@@ -1,4 +1,4 @@
-package org.lucheshidi.plateau.util;
+package org.lucheshidi.tcl.util;
 
 public class SystemPlatform {
     public static String getPlatformName() {

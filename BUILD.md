@@ -20,7 +20,7 @@ Then open exe4j,
     > in `Archive`, you can write where is your built Jar file. If you haven't, go [here](README.md).
     > click on `next`. 
     > in the line of `Main class from[Class path], click on ...`.
-    > choose `org.springframework.boot.loader.launch.JarLauncher`. ***DON'T CHOOSE `BOOT-INF.classes.org.lucheshidi.plateau.Main`, 'CAUSE IT CAN'T LAUNCH!!!***.
+    > choose `org.springframework.boot.loader.launch.JarLauncher`. ***DON'T CHOOSE `BOOT-INF.classes.org.lucheshidi.tcl.Main`, 'CAUSE IT CAN'T LAUNCH!!!***.
     > And click `next`.
 6. write your Java's version in `Minimum version`. If you don't know, you can open cmd and type:
     > ```cmd
@@ -33,4 +33,14 @@ Then open exe4j,
 ## Linux
 Linux is easier than Windows. because we already have the script.
 Ok, let's start.
-1. In where the 
+1. In where the jar file is, open the terminal in the parent directory.
+2. type:
+    ```bash
+    cp stub.sh ./target/ # copy the script in the "target" folder(where the jar file is)
+    cd target # back to "target" folder
+    cat ./stub.sh [JAR] > [FILE] && chmod 777 [FILE] # create executable file("[JAR]" must be your jar file name, "[FILE]" must be the output file name).
+    ```
+3. Now you may have a executable file in this folder. Now you can use `./[FILENAME]` to run the program!
+
+----
+I think you may already have your executable file. click [here](README.md) to go back to the readme.

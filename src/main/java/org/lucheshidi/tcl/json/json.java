@@ -1,4 +1,4 @@
-package org.lucheshidi.plateau.json;
+package org.lucheshidi.tcl.json;
 
 // 主类，对应整个JSON结构
 class Config {

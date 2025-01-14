@@ -1,6 +1,6 @@
-package org.lucheshidi.plateau;
+package org.lucheshidi.tcl;
 
-import org.lucheshidi.plateau.user.UserInput;
+import org.lucheshidi.tcl.user.UserInput;
 
 public class Main {
     public static void main(String[] args) {
