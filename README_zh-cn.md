@@ -9,7 +9,7 @@
 ## 简介
 终端工艺启动器(Terminal Craft Launcher, TCL) 是一个开源的、跨平台的 Minecraft 启动器，即将支持模组管理、游戏自定义、ModLoader（例如 Forge、NeoForge、Fabric、Quilt、LiteLoader 和 OptiFine）的安装、模组包创建、界面自定义等功能
 
-TCL 拥有极强的跨平台能力。不仅能够运行于 Windows、Linux 和 macOS 等操作系统，还支持 x86、ARM、MIPS 和 LoongArch 等多种 CPU 架构。通过 TCL，您可以轻松跨平台畅玩 Minecraft（即使系统没有 GUI 也可以）
+TCL 拥有极强的跨平台能力。不仅能够运行于 Windows、Linux 和 macOS 等操作系统，还支持 x86、ARM、MIPS 和 LoongArch 等多种 CPU 架构。通过 TCL，您可以轻松跨平台畅玩 Minecraft（即使系统有 GUI 也可以）
 
 关于跨平台支持，请点击[这里](PLATFORM.md)
 
