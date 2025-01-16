@@ -10,8 +10,12 @@
 - [简介](#简介)
 - [下载](#下载)
 - [手动编译](#手动编译)
-    - [第一部分：我有 IntelliJ IDEA](#第一部分-我有-intellij-idea)
-    - [第二部分：我只有一个终端](#第二部分-我只有一个终端)
+    - [第一部分：我有 IntelliJ IDEA](#第一部分我有-intellij-idea)
+    - [第二部分：我只有一个终端](#第二部分我只有一个终端)
+- [维护者](#维护者)
+- [贡献](#贡献)
+- [再见！(~~搞笑~~)](#感谢-我们认为终有一天你无需在树莓派上安装-openjfx-也能畅玩-minecraft)
+- [再见！](#感谢-我们相信-tcl-将成为畅玩-minecraft-的另一种方式)
 
 ## 简介
 终端工艺启动器 (Terminal Craft Launcher, TCL) 是一个开源且跨平台的 Minecraft 启动器 支持模组管理 游戏自定义 Mod 加载器安装（Forge NeoForge Fabric Quilt LiteLoader 和 OptiFine 等） 模组包创建 以及用户界面自定义等功能
@@ -38,12 +42,12 @@ git clone https://github.com/lucheshidi/TerminalCraftLauncher.git
 ```
 接着用 IntelliJ IDEA 打开这个文件夹 你会看到 4 个运行配置：
 
-| 配置名称        | 功能                                    |
-|----------------|---------------------------------------|
-| :app:bootRun   | 直接运行程序而不进行编译                     |
-| app:build      | 编译 Jar 文件（我们需要用它）               |
-| app:install    | 为开发人员安装插件                          |
-| Main           | TCL 的主程序                           |
+| 配置名称         | 功能                |
+|--------------|-------------------|
+| :app:bootRun | 直接运行程序而不进行编译      |
+| app:build    | 编译 Jar 文件（我们需要用它） |
+| app:install  | 为开发人员安装插件         |
+| Main         | TCL 的主程序          |
 
 选择 `app:build` 并运行 如果显示绿色的 `SUCCESS` 说明你成功构建了 Jar 文件  
 进入 `./target/` 文件夹 Jar 文件就在这里等着你啦
