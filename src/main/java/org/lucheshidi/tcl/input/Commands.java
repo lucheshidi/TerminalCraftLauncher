@@ -1,7 +1,16 @@
 package org.lucheshidi.tcl.input;
 
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
+
+import java.io.File;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+
+import static org.lucheshidi.tcl.Main.userHomeDir;
+import static org.lucheshidi.tcl.user.UserInput.baseDir;
+import static org.lucheshidi.tcl.user.UserInput.realBaseDir;
 
 public class Commands {
     public static void executeCommand(String input) {
@@ -24,95 +33,186 @@ public class Commands {
             case "help":
                 handleHelpCommand(options);
                 break;
+            case "license":
+                handleLicenseCommand(options);
+                break;
+            case "exit":
+                handleExitCommand(options);
+                break;
+            case "cd":
+                handleCdCommand(options);
+                break;
             default:
-                System.out.println("无效指令，请输入有效命令：launch、install、delete 或 help。");
+                System.out.println("unknown command，use the available commands: launch、install、delete or help.");
                 break;
         }
     }
 
-    private static void handleLaunchCommand(Map<String, String> options) {
+    private static void handleLaunchCommand(@NotNull Map<String, String> options) {
         String version = options.get("version");
         if (version == null) {
-            System.out.println("缺少版本号，请使用 `launch <version>` 指定版本号。");
+            System.out.println("Need version, use `launch <version>` set version name.");
         } else {
-            System.out.println("正在启动版本：" + version);
+            System.out.println("launching version：" + version);
         }
     }
 
-    private static void handleInstallCommand(Map<String, String> options) {
+    private static void handleInstallCommand(@NotNull Map<String, String> options) {
         String version = options.get("version");
         String customName = options.get("name"); // 捕获自定义名字
         if (version == null) {
-            System.out.println("缺少版本号，请使用 `install <version>` 指定版本号。");
+            System.out.println("Need version, use `install <version>` set version name.");
             return;
         }
 
-        System.out.println("正在尝试安装版本：" + version);
+        System.out.println("trying to install version: " + version);
 
         // 检查模块选项的兼容性
         if (!checkCompatibility(options)) {
-            System.out.println("检测到不兼容的模块选项，安装已终止。");
+            System.out.println("Test not compatibility mods, install over.");
             return;
         }
 
         // 模块安装逻辑
         if (options.containsKey("install-fabric")) {
-            System.out.println("安装 Fabric...");
+            System.out.println("install Fabric...");
         }
         if (options.containsKey("install-fabric-api")) {
-            System.out.println("安装 Fabric API...");
+            System.out.println("install Fabric API...");
         }
         if (options.containsKey("install-forge")) {
-            System.out.println("安装 Forge...");
+            System.out.println("install Forge...");
         }
         if (options.containsKey("install-neoforge")) {
-            System.out.println("安装 NeoForge...");
+            System.out.println("install NeoForge...");
         }
         if (options.containsKey("install-optifine")) {
-            System.out.println("安装 OptiFine...");
+            System.out.println("install OptiFine...");
         }
 
         if (customName != null) {
-            System.out.println("设置自定义名称为：" + customName);
+            System.out.println("set version name to: " + customName);
         }
 
-        System.out.println("版本安装完成：" + version);
+        System.out.println("install version successful: " + version);
     }
 
-    private static void handleDeleteCommand(Map<String, String> options) {
+    private static void handleDeleteCommand(@NotNull Map<String, String> options) {
         String version = options.get("version");
         if (version == null) {
-            System.out.println("缺少版本号，请使用 `delete <version>` 指定版本号。");
+            System.out.println("Need version, use `delete <version>` set version name.");
         } else {
-            System.out.println("正在删除版本：" + version);
+            System.out.println("delete version：" + version);
         }
     }
 
-    private static void handleHelpCommand(Map<String, String> options) {
+    private static void handleHelpCommand(@NotNull Map<String, String> options) {
         // 检查是否有 -v 或 --verbose 参数
         if (options.containsKey("verbose")) {
-            System.out.println("帮助命令 - 详细模式");
-            System.out.println("  launch <version>                 启动指定版本");
-            System.out.println("  install <version> [选项]          安装指定版本");
-            System.out.println("      --name <name>, -n <name>     设置安装的自定义名称");
-            System.out.println("      --install-fabric,      -if   安装 Fabric");
-            System.out.println("      --install-fabric-api,  -ifa  安装 Fabric API");
-            System.out.println("      --install-forge,       -ifo  安装 Forge");
-            System.out.println("      --install-neoforge,    -ino  安装 NeoForge");
-            System.out.println("      --install-optifine,    -io   安装 OptiFine");
-            System.out.println("  delete <version>           删除指定版本");
-            System.out.println("  help [-v | --verbose]      显示帮助信息，-v 显示详细信息");
+            System.out.println("help Command - verbose mode");
+            System.out.println("  launch <version>                 launch a version");
+            System.out.println("  install <version> [options]          install a version");
+            System.out.println("      --name <name>, -n <name>     set a name for the version");
+            System.out.println("      --install-fabric,      -if   install Fabric");
+            System.out.println("      --install-fabric-api,  -ifa  install Fabric API");
+            System.out.println("      --install-forge,       -ifo  install Forge");
+            System.out.println("      --install-neoforge,    -ino  install NeoForge");
+            System.out.println("      --install-optifine,    -io   install OptiFine");
+            System.out.println("  delete <version>           delete a version");
+            System.out.println("  license --ens              show the essential part of GPLv3");
+            System.out.println("  license --dis              show the disclaimer part of GPLv3");
+            System.out.println("  help [-v | --verbose]      show help, -v show verbose help");
         }
         else {
-            System.out.println("帮助命令");
-            System.out.println("  launch       启动版本");
-            System.out.println("  install      安装版本");
-            System.out.println("  delete       删除版本");
-            System.out.println("  help         显示帮助信息");
-            System.out.println("使用 `help -v` 查看详细帮助。");
+            System.out.println("help Command");
+            System.out.println("  launch       launch a version");
+            System.out.println("  install      install a version");
+            System.out.println("  delete       delete a version");
+            System.out.println("  help         show this help");
+            System.out.println("use `help -v` for verbose help.");
         }
     }
 
+    /**
+     * GPLv3的相应部分
+     *
+     * @param options 用户传入的选项
+     */
+    private static void handleLicenseCommand(@NotNull Map<String, String> options) {
+        // 检查选项中是否有 "ens" 或 "dis"
+        if (options.containsKey("ens")) {
+            printLicenseEssentialPart();
+        } else if (options.containsKey("dis")) {
+            printLicenseDisclaimer();
+        } else {
+            System.out.println("Invalid license option. Use 'license --ens' or 'license --dis'.");
+        }
+    }
+
+    private static void printLicenseEssentialPart() {
+        System.out.println("""
+                GNU GENERAL PUBLIC LICENSE
+                Version 3, 29 June 2007
+
+                Everyone is permitted to copy and distribute verbatim copies
+                of this license document, but changing it is not allowed.
+
+                [Essential part of GPLv3]
+                This program is free software: you can redistribute it and/or modify
+                it under the terms of the GNU General Public License as published by
+                the Free Software Foundation, either version 3 of the License, or
+                (at your option) any later version.
+                """);
+    }
+
+    private static void printLicenseDisclaimer() {
+        System.out.println("""
+                [Disclaimer part of GPLv3]
+                This program is distributed in the hope that it will be useful,
+                but WITHOUT ANY WARRANTY; without even the implied warranty of
+                MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+                GNU General Public License for more details.
+
+                You should have received a copy of the GNU General Public License
+                along with this program. If not, see <https://www.gnu.org/licenses/>.
+                """);
+    }
+
+    private static void handleExitCommand(@NotNull Map<String, String> options) {
+        System.out.println("Exiting TCL ...");
+        System.exit(0);
+    }
+
+    private static void handleCdCommand(@NotNull Map<String, String> options) {
+        // 获取 "dir" 参数值
+        String dirPath = options.get("dir");
+
+        // 如果 "dir" 参数值为空，则提示并返回
+        if (dirPath == null || dirPath.isEmpty()) {
+            baseDir = "~";
+            realBaseDir = userHomeDir;
+        }
+
+        File dir = new File(dirPath);
+
+        // 如果路径是有效目录
+        if (dir.isDirectory() && dir.exists()) {
+            baseDir = dir.toString();
+            realBaseDir = dir.toString();
+            // 如果是用户主目录，则显示为 "~"
+            if (realBaseDir.equals(userHomeDir)) {
+                baseDir = "~";
+            }
+        }
+        // 路径无效时输出相应错误消息
+        else {
+            if (!dir.exists()) {
+                System.out.println("fatal: No such directory: " + dir);
+            } else {
+                System.out.println("fatal: not a directory: " + dir);
+            }
+        }
+    }
     /**
      * 检测模块间的不兼容性
      *
@@ -143,7 +243,8 @@ public class Commands {
     /**
      * 解析输入命令和选项
      */
-    private static ParsedCommand parseInput(String input) {
+    @Contract("_ -> new")
+    private static @NotNull ParsedCommand parseInput(@NotNull String input) {
         String[] tokens = input.split(" "); // 按空格分割输入
         String command = tokens[0]; // 第一部分是主命令
         Map<String, String> options = new HashMap<>();
@@ -159,17 +260,20 @@ public class Commands {
                     // 处理带等号的参数，例如 --name=customName
                     String[] parts = token.substring(2).split("=", 2);
                     options.put(parts[0].toLowerCase(), parts[1]);
-                } else {
+                }
+                else {
                     // 处理普通 --option
                     String optionName = token.substring(2).toLowerCase();
                     options.put(optionName, "true");
                 }
-            } else if (token.startsWith("-")) {
+            }
+            else if (token.startsWith("-")) {
                 // 处理短参数，例如 -v, -n customName
                 String optionName = token.substring(1).toLowerCase();
                 if (i + 1 < tokens.length && !tokens[i + 1].startsWith("-")) {
                     options.put(optionName, tokens[++i]); // 捕获短参数的值
-                } else {
+                }
+                else {
                     options.put(optionName, "true"); // 捕获布尔类型短参数
                 }
             }

@@ -10,7 +10,7 @@
 ## Introduction
 Terminal Craft Launcher(TCL) is an open-source, cross-platform Minecraft launcher that will support Mod Management, Game Customizing, ModLoader Installing (Forge, NeoForge, Fabric, Quilt, LiteLoader, and OptiFine), Modpack Creating, UI Customization, and more.
 
-TCL has amazing cross-platform capabilities. Not only does it run on different operating systems like Windows, Linux, and macOS, but it also supports various CPU architectures such as x86, ARM, MIPS, and LoongArch. You can easily enjoy Minecraft across different platforms through TCL(even if the system hasn't GUI).
+TCL has amazing cross-platform capabilities. Not only does it run on different operating systems like Windows, Linux, and macOS, but it also supports various CPU architectures such as x86, ARM, MIPS, and LoongArch. You can easily enjoy Minecraft across different platforms through TCL(But the system must have a GUI).
 
 About the crossed-platform, click on [here](PLATFORM.md)
 
