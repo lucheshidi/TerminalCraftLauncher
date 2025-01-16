@@ -7,6 +7,13 @@
 
 ***English*** | [简体中文](README_zh-cn.md) | [繁體中文](README_zh-tw.md)
 
+## Table of Contents
+- [Introduction](#introduction)
+- [Download](#download)
+- [Complie manualy](#compile-manually)
+  - [part 1: I have Intellij IDEA](#part-1-i-have-intellij-idea)
+  - [part 2: I just have a terminal](#part-2-i-just-have-a-terminal)
+- []
 ## Introduction
 Terminal Craft Launcher(TCL) is an open-source, cross-platform Minecraft launcher that will support Mod Management, Game Customizing, ModLoader Installing (Forge, NeoForge, Fabric, Quilt, LiteLoader, and OptiFine), Modpack Creating, UI Customization, and more.
 
@@ -32,12 +39,12 @@ git clone https://github.com/lucheshidi/TerminalCraftLauncher.git
 ```
 Now open your idea to this folder, you'll see 4 running configuration. The 4 configuration do the not same thing:
 
- | Configuration name   | do                                        |
+| Configuration name   | do                                        |
  |----------------------|-------------------------------------------|
- | :app:bootRun         | just run the program, but not compile.    |
- | app:build            | build Jar file, we will use it.           |
- | app:install          | for developers to install plugins.        |
- | Main                 | the Main program for TCL.                 |
+| :app:bootRun         | just run the program, but not compile.    |
+| app:build            | build Jar file, we will use it.           |
+| app:install          | for developers to install plugins.        |
+| Main                 | the Main program for TCL.                 |
 
 Select `app:build` and running it. If it appears a green `SUCCESS`, you are successful build the Jar.
 Go to the `./target/` folder it is a Jar file waiting for you!
@@ -54,4 +61,12 @@ ls # show all the folder and file(Windows type "dir")
 Now in this folder you can see a file named `TerminalCraftLauncher-1.0-SNAPSHOT.jar`.
 I think you know how to do with the Jar file. or if you want to build Linux executable file or Windows EXE file, go [here](BUILD.md).
 
-## 
+## Maintainers
+[@lucheshidi](https://github.com/lucheshidi)
+
+## Contributing
+If you have questions, or you also want to build TCL, welcome to [have a issue](https://github.com/lucheshidi/TerminalCraftLauncher/issues)!
+And this program is open-sourced by [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.html#license-text). And you can see the licenses [here](LICENSE).
+
+## ~~Thanks, We thinks there's a final day that you don't need to install `openjfx` on your `raspberry pi` and then you can play Minecraft!~~
+## Thanks, We think there's a final day that TCL will ~~kill~~ be another way to play Minecraft!
