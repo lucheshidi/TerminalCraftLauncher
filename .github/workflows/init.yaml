@@ -4,14 +4,20 @@ jobs:
   buildBootJarWar:
     runs-on: ubuntu-latest
     steps:
+      - run: sudo apt update
+      - run: sudo apt upgrade
+      - run: sudo apt install gradle
       - run: echo "Start building Jar and War ..."
-      - run: ./gradlew clean bootBuildImage build war bootJar bootWar
+      - run: gradle clean bootBuildImage build war bootJar bootWar
       - run: echo "build ${{ job.status }}"
 
   bootRun:
     runs-on: ubuntu-latest
     steps:
+      - run: sudo apt update
+      - run: sudo apt upgrade
+      - run: sudo apt install gradle
       - run: echo "Building bootrun !"
-      - run: ./gradlew bootRun
-      - run: ./gradlew bootTestRun
+      - run: gradle bootRun
+      - run: gradle bootTestRun
       - run: echo "Finished."
