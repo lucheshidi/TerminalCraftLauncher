@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ccc21a3e-4aea-4ce1-8de0-12af1b500fc1" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BUILD.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PLATFORM.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README_zh-cn.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README_zh-tw.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/input/Commands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/json/CreateConfigJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/json/JsonData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/json/JsonDataManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/json/json.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/launch/run-command.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/user/UserInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/util/SystemPlatform.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ReadJsonExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WriteJsonExample.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lucheshidi&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/lucheshidi/TerminalCraftLauncher&quot;,
+    &quot;accountId&quot;: &quot;f20dd259-097d-417b-a8af-3066d3763b10&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2s2Nufw6oOouaXy4LaV5qF5N0oB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.:app:bootRun">
+    <list>
+      <item itemvalue="Gradle.app:build:bootJar" />
+      <item itemvalue="Gradle.app:build:bootWar" />
+      <item itemvalue="Gradle.:app:bootRun" />
+      <item itemvalue="应用程序.Main" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="ccc21a3e-4aea-4ce1-8de0-12af1b500fc1" name="更改" comment="" />
+      <created>1737649936616</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737649936616</updated>
+    </task>
+    <servers />
+  </component>
+</project>
