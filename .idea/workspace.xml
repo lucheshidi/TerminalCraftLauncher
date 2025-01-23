@@ -4,33 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ccc21a3e-4aea-4ce1-8de0-12af1b500fc1" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BUILD.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PLATFORM.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README_zh-cn.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README_zh-tw.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/input/Commands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/json/CreateConfigJson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/json/JsonData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/json/JsonDataManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/json/json.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/launch/run-command.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/user/UserInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/util/SystemPlatform.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ReadJsonExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WriteJsonExample.java" afterDir="false" />
+    <list default="true" id="ccc21a3e-4aea-4ce1-8de0-12af1b500fc1" name="更改" comment="INIT">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/gradle.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/gradle.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +72,27 @@
       <option name="presentableId" value="Default" />
       <updated>1737649936616</updated>
     </task>
+    <task id="LOCAL-00001" summary="INIT">
+      <option name="closed" value="true" />
+      <created>1737651117820</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737651117820</updated>
+    </task>
+    <task id="LOCAL-00002" summary="INIT">
+      <option name="closed" value="true" />
+      <created>1737651132212</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737651132212</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="INIT" />
+    <option name="LAST_COMMIT_MESSAGE" value="INIT" />
   </component>
 </project>
