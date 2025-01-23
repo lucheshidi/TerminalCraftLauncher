@@ -1,0 +1,17 @@
+name: Init the project
+on: [pull_request]
+jobs:
+  buildBootJarWar:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Start building Jar and War ..."
+      - run: ./gradlew clean bootBuildImage build war bootJar bootWar
+      - run: echo "build ${{ job.status }}"
+
+  bootRun:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Building bootrun !"
+      - run: ./gradlew bootRun
+      - run: ./gradlew bootTestRun
+      - run: echo "Finished."
