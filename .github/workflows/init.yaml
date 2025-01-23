@@ -1,5 +1,5 @@
 name: Init the project
-on: [pull_request]
+on: [push]
 jobs:
   buildBootJarWar:
     runs-on: ubuntu-latest
