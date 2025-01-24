@@ -5,28 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccc21a3e-4aea-4ce1-8de0-12af1b500fc1" name="更改" comment="INIT">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/TerminalCraftLauncher__bootRun_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/TerminalCraftLauncher__git_push_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/TerminalCraftLauncher__win_git_push_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/git-commit-push.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/git-commit.push.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/_app_bootRun.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/app_build_bootJar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/TerminalCraftLauncher__build_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/app_build_bootWar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/TerminalCraftLauncher__install_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/input/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/input/Commands.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +83,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Batch.TerminalCraftLauncher [win git push].executor": "Run",
     "Gradle.TerminalCraftLauncher [:org.lucheshidi.tcl.Main.main()].executor": "Run",
     "Gradle.TerminalCraftLauncher [applyPatches].executor": "Run",
     "Gradle.TerminalCraftLauncher [bootJar].executor": "Run",
@@ -110,10 +91,12 @@
     "Gradle.TerminalCraftLauncher [init].executor": "Run",
     "Gradle.TerminalCraftLauncher [install].executor": "Run",
     "Gradle.app:build:bootJar.executor": "Run",
+    "Gradle.构建 TerminalCraftLauncher.executor": "Run",
     "JAR 应用程序.TerminalCraftLauncher-1.0-SNAPSHOT.jar.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Shell Script.TerminalCraftLauncher [git push].executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/home/jyx/Program/Java/TerminalCraftLauncher/src/test/java",
@@ -133,7 +116,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Batch.TerminalCraftLauncher [win git push]">
+  <component name="RunManager" selected="Shell Script.TerminalCraftLauncher [git push]">
     <list>
       <item itemvalue="Batch.TerminalCraftLauncher [win git push]" />
       <item itemvalue="Gradle.TerminalCraftLauncher [build]" />
@@ -216,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737661336679</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="INIT">
+      <option name="closed" value="true" />
+      <created>1737730802604</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1737730802604</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
