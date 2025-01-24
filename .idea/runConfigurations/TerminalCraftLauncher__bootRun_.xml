@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="app:build:bootWar" type="GradleRunConfiguration" factoryName="Gradle">
+  <configuration default="false" name="TerminalCraftLauncher [bootRun]" type="GradleRunConfiguration" factoryName="Gradle">
     <ExternalSystemSettings>
       <option name="executionName" />
       <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -9,10 +9,7 @@
         <list />
       </option>
       <option name="taskNames">
-        <list>
-          <option value="clean" />
-          <option value="bootWar" />
-        </list>
+        <list />
       </option>
       <option name="vmOptions" />
     </ExternalSystemSettings>

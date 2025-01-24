@@ -33,9 +33,6 @@ public class Commands {
             case "help":
                 handleHelpCommand(options);
                 break;
-            case "license":
-                handleLicenseCommand(options);
-                break;
             case "exit":
                 handleExitCommand(options);
                 break;
@@ -43,7 +40,7 @@ public class Commands {
                 handleCdCommand(options);
                 break;
             default:
-                System.out.println("unknown command，use the available commands: launch、install、delete or help.");
+                System.out.println("unknown command，use help for help.");
                 break;
         }
     }
@@ -133,51 +130,6 @@ public class Commands {
         }
     }
 
-    /**
-     * GPLv3的相应部分
-     *
-     * @param options 用户传入的选项
-     */
-    private static void handleLicenseCommand(@NotNull Map<String, String> options) {
-        // 检查选项中是否有 "ens" 或 "dis"
-        if (options.containsKey("ens")) {
-            printLicenseEssentialPart();
-        } else if (options.containsKey("dis")) {
-            printLicenseDisclaimer();
-        } else {
-            System.out.println("Invalid license option. Use 'license --ens' or 'license --dis'.");
-        }
-    }
-
-    private static void printLicenseEssentialPart() {
-        System.out.println("""
-                GNU GENERAL PUBLIC LICENSE
-                Version 3, 29 June 2007
-
-                Everyone is permitted to copy and distribute verbatim copies
-                of this license document, but changing it is not allowed.
-
-                [Essential part of GPLv3]
-                This program is free software: you can redistribute it and/or modify
-                it under the terms of the GNU General Public License as published by
-                the Free Software Foundation, either version 3 of the License, or
-                (at your option) any later version.
-                """);
-    }
-
-    private static void printLicenseDisclaimer() {
-        System.out.println("""
-                [Disclaimer part of GPLv3]
-                This program is distributed in the hope that it will be useful,
-                but WITHOUT ANY WARRANTY; without even the implied warranty of
-                MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-                GNU General Public License for more details.
-
-                You should have received a copy of the GNU General Public License
-                along with this program. If not, see <https://www.gnu.org/licenses/>.
-                """);
-    }
-
     private static void handleExitCommand(@NotNull Map<String, String> options) {
         System.out.println("Exiting TCL ...");
         System.exit(0);
@@ -187,13 +139,15 @@ public class Commands {
         // 获取 "dir" 参数值
         String dirPath = options.get("dir");
 
-        // 如果 "dir" 参数值为空，则提示并返回
+        // 如果 "dir" 参数值为空，则回到用户的主目录
         if (dirPath == null || dirPath.isEmpty()) {
             baseDir = "~";
             realBaseDir = userHomeDir;
+            // System.out.println("Switched to home directory: " + realBaseDir);
+            return;
         }
 
-        File dir = new File(dirPath);
+        File dir = new File(dirPath); // 传递确保不为 null 的 dirPath
 
         // 如果路径是有效目录
         if (dir.isDirectory() && dir.exists()) {
@@ -203,16 +157,18 @@ public class Commands {
             if (realBaseDir.equals(userHomeDir)) {
                 baseDir = "~";
             }
+            // System.out.println("Switched to directory: " + realBaseDir);
         }
         // 路径无效时输出相应错误消息
         else {
             if (!dir.exists()) {
-                System.out.println("fatal: No such directory: " + dir);
+                System.out.println("fatal: No such directory: " + dirPath);
             } else {
-                System.out.println("fatal: not a directory: " + dir);
+                System.out.println("fatal: not a directory: " + dirPath);
             }
         }
     }
+
     /**
      * 检测模块间的不兼容性
      *

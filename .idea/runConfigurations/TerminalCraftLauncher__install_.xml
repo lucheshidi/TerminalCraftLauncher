@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="app:build:bootJar" type="GradleRunConfiguration" factoryName="Gradle">
+  <configuration default="false" name="TerminalCraftLauncher [install]" type="GradleRunConfiguration" factoryName="Gradle">
     <ExternalSystemSettings>
       <option name="executionName" />
       <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -11,7 +11,7 @@
       <option name="taskNames">
         <list>
           <option value="clean" />
-          <option value="bootJar" />
+          <option value="prepareKotlinBuildScriptModel" />
         </list>
       </option>
       <option name="vmOptions" />
