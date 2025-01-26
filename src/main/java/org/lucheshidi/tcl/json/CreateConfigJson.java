@@ -7,10 +7,11 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import static org.lucheshidi.tcl.Main.*;
+
 public class CreateConfigJson {
     public static void createJson() {
-        String path = System.getProperty("user.dir");
-        File file = new File(path + "/config.json");
+        File file = new File(programPath + "/tcl/tcl.json");
         if (!file.exists()) {
             // 创建嵌套类的实例
             Dirs dirs = new Dirs("NULL", "java");
@@ -22,10 +23,14 @@ public class CreateConfigJson {
             String json = gson.toJson(config);
     
             // 写入到JSON文件
-            try (FileWriter writer = new FileWriter("config.json")) {
+            try (FileWriter writer = new FileWriter(programPath + "/tcl/tcl.json")) {
                 writer.write(json);
-            } catch (IOException e) {
+            } 
+            catch (IOException e) {
                 e.printStackTrace();
+                File folder = new File(programPath + "/tcl");
+                folder.mkdirs();
+                createJson();
             }
         }
     }

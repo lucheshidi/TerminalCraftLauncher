@@ -4,13 +4,13 @@ import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 import static org.lucheshidi.tcl.Main.userHomeDir;
 import static org.lucheshidi.tcl.user.UserInput.baseDir;
 import static org.lucheshidi.tcl.user.UserInput.realBaseDir;
+import org.lucheshidi.tcl.json.JsonData;
 
 public class Commands {
     public static void executeCommand(String input) {
@@ -45,12 +45,23 @@ public class Commands {
         }
     }
 
-    private static void handleLaunchCommand(@NotNull Map<String, String> options) {
+    // If you found "protected" in next line, You were find a Egghunt.
+    protected static void handleLaunchCommand(@NotNull Map<String, String> options) {
         String version = options.get("version");
         if (version == null) {
             System.out.println("Need version, use `launch <version>` set version name.");
-        } else {
-            System.out.println("launching version：" + version);
+        } 
+        else {
+            System.out.println("launching version: " + version);
+            
+            try {
+                String javaDir = JsonData.get("javaDir");
+                ProcessBuilder processBuilder = new ProcessBuilder(javaDir + "");
+            }
+            catch (Exception e) {
+                System.err.println(e.getMessage());
+                e.printStackTrace();
+            }
         }
     }
 
