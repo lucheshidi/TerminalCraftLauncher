@@ -9,7 +9,9 @@
         <list />
       </option>
       <option name="taskNames">
-        <list />
+        <list>
+          <option value="bootRun" />
+        </list>
       </option>
       <option name="vmOptions" />
     </ExternalSystemSettings>
