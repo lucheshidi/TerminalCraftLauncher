@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/TerminalCraftLauncher.iml" filepath="$PROJECT_DIR$/TerminalCraftLauncher.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/TerminalCraftLauncher.test.iml" filepath="$PROJECT_DIR$/.idea/modules/TerminalCraftLauncher.test.iml" />
     </modules>
   </component>

@@ -17,6 +17,7 @@ public class UserInput {
     // 定义基础路径
     public static String baseDir = null;
     public static String realBaseDir = null;
+    public static String prompt = null;
     public static void waitInput() {
         // 设置日志为 ERROR，强制隐藏警告信息
         Logger logger = Logger.getLogger("");
@@ -44,9 +45,16 @@ public class UserInput {
         }
 
         //重复监听用户输入
-        while(true) {
+        while (true) {
             // 使用 LineReader 监听输入
-            String input = lineReader.readLine("tcl@TerminalCraftLauncher [" + baseDir + "] >> ");
+            String input = null;
+            if (prompt == null) {
+                input = lineReader.readLine("tcl@TerminalCraftLauncher [" + baseDir + "] >> ");
+            }
+            else {
+                String[] promptParts = prompt.split("%Dir");
+                input = lineReader.readLine(promptParts[0] + baseDir + promptParts[1]);
+            }
             // 清空控制台
             if (input != null && input.equals("\f")) {
                 clearConsole();

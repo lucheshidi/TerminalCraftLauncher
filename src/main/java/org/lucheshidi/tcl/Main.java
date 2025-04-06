@@ -1,6 +1,7 @@
 package org.lucheshidi.tcl;
 
 import org.lucheshidi.tcl.init.CreateConfigJson;
+import org.lucheshidi.tcl.json.handleJsonData;
 import org.lucheshidi.tcl.user.UserInput;
 
 public class Main {
@@ -24,6 +25,7 @@ public class Main {
         System.out.println("Plateau Craft Launcher is init ...");
         // INIT
         CreateConfigJson.createJson();
+        handleJsonData.run();
         UserInput.waitInput();
     }
 }

@@ -15,7 +15,13 @@ dependencies {
     implementation 'org.jline:jline:3.28.0'
     // https://mvnrepository.com/artifact/org.jetbrains/annotations
     implementation 'org.jetbrains:annotations:26.0.2'
-    
+    // JUnit
+    testImplementation platform('org.junit:junit-bom:5.10.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
 }
 
 repositories {
