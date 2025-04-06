@@ -5,6 +5,9 @@ import com.google.gson.Gson;
 
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
+import org.lucheshidi.tcl.json.classes.Config;
+import org.lucheshidi.tcl.json.classes.Dirs;
+import org.lucheshidi.tcl.json.classes.GameConfig;
 
 public final class JsonData {
     private static final Gson gson = new GsonBuilder().setPrettyPrinting().create();

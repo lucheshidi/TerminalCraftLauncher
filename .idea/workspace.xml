@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccc21a3e-4aea-4ce1-8de0-12af1b500fc1" name="更改" comment="INIT">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/TerminalCraftLauncher.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/fileHashes/fileHashes.bin" afterDir="false" />
@@ -21,15 +15,15 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/TerminalCraftLauncher__win_git_push_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/bootWar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/bootWar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/CreateConfigJson.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Main.class.uniqueId0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/input/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/input/Commands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/json/CreateConfigJson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/json/JsonData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/json/JsonData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/json/JsonDataManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/json/json.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/user/UserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lucheshidi/tcl/user/UserInput.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +53,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -88,45 +82,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Batch.TerminalCraftLauncher [win git push].executor": "Run",
-    "Gradle.TerminalCraftLauncher [:org.lucheshidi.tcl.Main.main()].executor": "Run",
-    "Gradle.TerminalCraftLauncher [applyPatches].executor": "Run",
-    "Gradle.TerminalCraftLauncher [bootJar].executor": "Run",
-    "Gradle.TerminalCraftLauncher [bootRun].executor": "Run",
-    "Gradle.TerminalCraftLauncher [buildNeeded].executor": "Run",
-    "Gradle.TerminalCraftLauncher [build].executor": "Run",
-    "Gradle.TerminalCraftLauncher [init].executor": "Run",
-    "Gradle.TerminalCraftLauncher [install].executor": "Run",
-    "Gradle.app:build:bootJar.executor": "Run",
-    "Gradle.构建 TerminalCraftLauncher.executor": "Run",
-    "JAR 应用程序.TerminalCraftLauncher-1.0-SNAPSHOT.jar.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Shell Script.TerminalCraftLauncher [git push].executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "/home/jyx/Program/Java/TerminalCraftLauncher/src/test/java",
-    "last_opened_file_path": "/home/jyx/Program/Java/TerminalCraftLauncher/git-commit.push.cmd",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Batch.TerminalCraftLauncher [win git push].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TerminalCraftLauncher [:org.lucheshidi.tcl.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TerminalCraftLauncher [applyPatches].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TerminalCraftLauncher [bootJar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TerminalCraftLauncher [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TerminalCraftLauncher [buildNeeded].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TerminalCraftLauncher [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TerminalCraftLauncher [init].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TerminalCraftLauncher [install].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.app:build:bootJar.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.构建 TerminalCraftLauncher.executor&quot;: &quot;Run&quot;,
+    &quot;JAR 应用程序.TerminalCraftLauncher-1.0-SNAPSHOT.jar.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Shell Script.TerminalCraftLauncher [git push].executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;/home/jyx/Program/Java/TerminalCraftLauncher/src/test/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jyx/Program/Java/TerminalCraftLauncher/git-commit.push.cmd&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlserver"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.lucheshidi.tcl.gradle.tasks" />
@@ -136,14 +130,24 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TerminalCraftLauncher [bootRun]">
+  <component name="RunManager" selected="应用程序.Main">
+    <configuration name="TerminalCraftLauncher-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/build/libs/TerminalCraftLauncher-1.0-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Gradle.TerminalCraftLauncher [bootRun]" />
       <item itemvalue="Gradle.TerminalCraftLauncher [build]" />
       <item itemvalue="Gradle.TerminalCraftLauncher [install]" />
+      <item itemvalue="JAR 应用程序.TerminalCraftLauncher-1.0-SNAPSHOT.jar" />
       <item itemvalue="Shell Script.TerminalCraftLauncher [git push]" />
       <item itemvalue="应用程序.Main" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR 应用程序.TerminalCraftLauncher-1.0-SNAPSHOT.jar" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -163,7 +167,10 @@
       <updated>1737649936616</updated>
       <workItem from="1738340373753" duration="808000" />
       <workItem from="1739619632674" duration="3000" />
-      <workItem from="1741622738916" duration="98000" />
+      <workItem from="1741622738916" duration="2547000" />
+      <workItem from="1742827129803" duration="381000" />
+      <workItem from="1743853835717" duration="4754000" />
+      <workItem from="1743929560634" duration="1753000" />
     </task>
     <task id="LOCAL-00001" summary="INIT">
       <option name="closed" value="true" />
@@ -237,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737730802604</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="INIT">
+      <option name="closed" value="true" />
+      <created>1741622876937</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1741622876937</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,6 +1,6 @@
 package org.lucheshidi.tcl;
 
-import org.lucheshidi.tcl.json.CreateConfigJson;
+import org.lucheshidi.tcl.init.CreateConfigJson;
 import org.lucheshidi.tcl.user.UserInput;
 
 public class Main {

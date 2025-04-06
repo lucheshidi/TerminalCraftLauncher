@@ -115,9 +115,9 @@ public class Commands {
     }
 
     private static void handleHelpCommand(@NotNull Map<String, String> options) {
-        // 检查是否有 -v 或 --verbose 参数
-        if (options.containsKey("verbose")) {
-            System.out.println("help Command - verbose mode");
+        // 检查是否有 -a 或 --advanced 参数
+        if (options.containsKey("a") || options.containsKey("advanced")) {
+            System.out.println("help Command - advanced mode");
             System.out.println("  launch <version>                 launch a version");
             System.out.println("  install <version> [options]          install a version");
             System.out.println("      --name <name>, -n <name>     set a name for the version");
@@ -129,7 +129,7 @@ public class Commands {
             System.out.println("  delete <version>           delete a version");
             System.out.println("  license --ens              show the essential part of GPLv3");
             System.out.println("  license --dis              show the disclaimer part of GPLv3");
-            System.out.println("  help [-v | --verbose]      show help, -v show verbose help");
+            System.out.println("  help [-a | --advanced]      show help, -v show verbose help");
         }
         else {
             System.out.println("help Command");
@@ -137,7 +137,7 @@ public class Commands {
             System.out.println("  install      install a version");
             System.out.println("  delete       delete a version");
             System.out.println("  help         show this help");
-            System.out.println("use `help -v` for verbose help.");
+            System.out.println("use `help -a` for verbose help.");
         }
     }
 
@@ -218,7 +218,15 @@ public class Commands {
 
         // 遍历选项
         if (tokens.length > 1) {
-            options.put("version", tokens[1]); // 第二部分是版本号
+            if (tokens[0].equals("launch") || tokens[0].equals("install") || tokens[0].equals("delete")) {
+                options.put("version", tokens[1]); // 第二部分是版本号
+            }
+            else if (tokens[0].equals("cd")) {
+                options.put("dir", tokens[1]); // 第二部分是目录路径
+            }
+            else if (tokens[0].equals("help")) {
+                options.put("advanced", tokens[1]);
+            }
         }
         for (int i = 2; i < tokens.length; i++) {
             String token = tokens[i];
