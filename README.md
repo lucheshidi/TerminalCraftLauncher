@@ -7,7 +7,9 @@
 
 ***English*** | [简体中文](README_zh-cn.md) | [繁體中文](README_zh-tw.md)
 
-# $\color{red}{\huge{\text{PROJECT UNCONTINUED}}}$
+> [!CAUTION]
+> # PROJECT UNCONTINUED
+> This repository is no longer maintained. If you want a continue version, please go to [PixelMCLauncher](https://github.com/lucheshidi/pixelmclauncher)
 
 ## Table of Contents
 - [Introduction](#introduction)
