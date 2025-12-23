@@ -6,6 +6,8 @@
 
 [English](README.md) | ***简体中文*** | [繁體中文](README_zh-tw.md)
 
+# $\color{red}{\huge{\text{项目已终止！}}}$
+
 ## 目录
 - [简介](#简介)
 - [下载](#下载)
