@@ -6,7 +6,9 @@
 
 [English](README.md) | [简体中文](README_zh-cn.md) | ***繁體中文***
 
-# $\color{red}{\huge{\text{項目已終止！}}}$
+> [!CAUTION]
+> # 項目已停止維修！
+> TCL因為太落後已經停止維護！請關注後續版本[PMCL](https://github.com/lucheshidi/pixelmclauncher)
 
 ## 目錄
 - [簡介](#簡介)
