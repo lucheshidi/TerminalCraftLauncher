@@ -6,6 +6,8 @@
 
 [English](README.md) | [简体中文](README_zh-cn.md) | ***繁體中文***
 
+# $\color{red}{\huge{\text{項目已終止！}}}$
+
 ## 目錄
 - [簡介](#簡介)
 - [下載](#下載)
